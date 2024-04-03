@@ -1,4 +1,5 @@
-# 2-Vertex Strongly biconnected Graph Algorithm
+# 2-Vertex Strongly Biconnected Graph Algorithm
+
 
 ## Introduction
 
