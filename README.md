@@ -18,10 +18,10 @@ Develop a procedure to test whether a directed graph is 2-vertex strongly biconn
 
 ## References
 
-1. [Martin Dietzfelbinger, Kurt Mehlhorn, Peter Sanders: Algorithmen und Datenstrukturen - die Grundwerkzeuge. eXamen.press, Springer 2014](https://doi.org/10.1007/978-3-642-05596-6)
-2. [Kurt Mehlhorn, Stefan Näher, Peter Sanders: Engineering DFS-Based Graph Algorithms. CoRR abs/1703.10023 (2017)](https://arxiv.org/abs/1703.10023)
-3. [Harold N. Gabow: Path-based depth-first search for strong and biconnected components. Inf. Process. Lett. 74(3-4): 107-114 (2000)](https://doi.org/10.1016/S0020-0190(00)00127-1)
-4. [J. M. Schmidt, A simple test on 2-vertex- and 2-edge-connectivity, Inform. Process. Lett. 113 (2013) 241–244.](https://doi.org/10.1016/j.ipl.2012.12.006)
+1. [Martin Dietzfelbinger, Kurt Mehlhorn, Peter Sanders: Algorithmen und Datenstrukturen - die Grundwerkzeuge. eXamen.press, Springer 2014](https://link.springer.com/book/10.1007/978-3-642-05472-3)
+2. [Kurt Mehlhorn, Stefan Näher, Peter Sanders: Engineering DFS-Based Graph Algorithms. CoRR abs/1703.10023 (2017)](https://arxiv.org/pdf/1703.10023.pdf)
+3. [Harold N. Gabow: Path-based depth-first search for strong and biconnected components. Inf. Process. Lett. 74(3-4): 107-114 (2000)](https://www.cs.princeton.edu/courses/archive/spr03/cs423/download/path_based_dfs.pdf)
+4. [J. M. Schmidt, A simple test on 2-vertex- and 2-edge-connectivity, Inform. Process. Lett. 113 (2013) 241–244.](https://arxiv.org/ftp/arxiv/papers/1209/1209.0700.pdf)
 5. [Raed Jaberi, Minimum 2-Vertex Strongly Biconnected Spanning Directed Subgraph Problem Discrete Mathematics Letters, Volume 7(2021)](https://doi.org/10.47443/dml.2021.0024)
 6. [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/index.html)
 
