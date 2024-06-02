@@ -4,7 +4,6 @@
 
 using namespace std;
 
-// Add by Adnan
 struct Vertex
 {
   int dfsNumber = -1;
