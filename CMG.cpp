@@ -3,18 +3,16 @@
 #include <stack>
 
 using namespace std;
+
 // Add by Adnan
 struct Vertex
 {
   int dfsNumber = -1;
   int finishNumber = -1;
-  vector<int> neighbors;
-  int comp = -1;
-  vector<int> SCC;
-  char state = 'n';
-  // 'n' for new
-  // 'a' for active
-  // 'f' for finish
+  vector<int> neighbors; // The vertices that connected with this vertex
+  int comp = -1; // The representative vertex of the component to which this vertex belongs
+  vector<int> SCC; // Strongly Connected Components
+  char state = 'n'; // 'n' for new; 'a' for active; 'f' for finish
 };
 
 class Graph
@@ -22,13 +20,13 @@ class Graph
 private:
   int V;
   vector<vector<int>> adjMatrix;
-  int dfsCounter = 0;      // Add by Adnan
-  int finishCounter = 0;   // Add by Adnan
-  vector<Vertex> vertices; // Add by Adnan
-  stack<int> Rstack;       // Add by Adnan
-  stack<int> Ostack;       // Add by Adnan
+  int dfsCounter = 0;      
+  int finishCounter = 0;   
+  vector<Vertex> vertices; 
+  stack<int> Rstack;       
+  stack<int> Ostack;       
 
-  // Add by Adnan
+  // check if a vertex in OStack 
   bool inOStack(int v)
   {
     stack<int> o = Ostack;
@@ -37,7 +35,7 @@ private:
     return !o.empty();
   }
 
-  // Add by Adnan
+  // main dfs function 
   void dfs(int v)
   {
     vertices[v].state = 'a';
@@ -71,7 +69,7 @@ private:
     }
   }
 
-  // Add by Adnan
+  // initialize the vertex.neighbors
   void verticesNeighbors()
   {
     for (int i = 0; i < V; i++)
@@ -84,7 +82,7 @@ public:
   Graph(int V) : V(V)
   {
     adjMatrix.resize(V, vector<int>(V, 0));
-    vertices.resize(V); // Add by Adnan
+    vertices.resize(V); 
   }
 
   int numberOfVertices()
@@ -119,7 +117,7 @@ public:
     }
   }
 
-  // Add by Adnan
+  // print each vertex details 
   void printDetails()
   {
     for (int i = 0; i < V; i++)
@@ -163,7 +161,7 @@ public:
     }
   }
 
-  // Add by Adnan
+  // main cmg function
   void CMG()
   {
     verticesNeighbors();
