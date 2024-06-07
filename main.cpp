@@ -246,7 +246,7 @@ void getTheBiggestStronglyConnectedComponent() {
     if(V==big.size()){
         cout<<"All graph is strongly connected"<<endl;
     }else{
-        cout<<"This is the biggest strongly connected component in this graph : {}";
+        cout<<"This is the biggest strongly connected component in this graph : {";
             for (int i = 0; i < big.size(); i++)
     {
         cout<<big[i]<<", ";
