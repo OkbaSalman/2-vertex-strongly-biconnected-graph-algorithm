@@ -166,6 +166,7 @@ public:
     }
 
     void convertToUndirected() {
+        cout<<"Making the graph undirected..."<<endl;
         for (int i = 0; i < V; ++i) {
             for (int j = 0; j < V; ++j) {
                 if (adjMatrix[i][j] == 1) {
@@ -176,6 +177,7 @@ public:
     }
 
     void revertToDirected() {
+        cout<<"Reverting the graph to directed..."<<endl;
         adjMatrix = originalAdjMatrix;
     }
 
@@ -256,6 +258,7 @@ void getTheBiggestStronglyConnectedComponent() {
   // Get new adjMatrix
  
 void MakeTheBiggestStronglyConnectedComponentTheMainGraph() {
+    cout<<"Making the biggest strongly connected component the main graph..."<<endl;
     int n = big.size();
     newAdj.resize(n, vector<int>(n, 0));
     map<int, int> indexMap;  // Map to keep track of new indices
