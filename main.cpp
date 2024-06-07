@@ -1,3 +1,16 @@
+/*
+-Okba Salman: Finding articulation points and bridges
+-Adnan Makkieah: The tuned DFS for Gabow algorithm
+-Hasan Balleh: The tunde DFS for Jens algorithm
+-Abdalrahman Haddad: Making the biggest strongly connected component the main graph
+-Mohammad Hadi Zaabi: The graph printing functions
+-Khaldon Dahhan: Converting the graph from directed to undirected and back
+-Sana Almunther: Basic implementation of a graph using adjacency matrix 
+-Sonar Masri: Get the biggest strongly connected component
+-Rania Kojally: The implementation of the CMG using the gabow dfs function
+-Safa Hekmat: Implementing the inOStack function 
+-Danya Bakry: Providing examples for testing purposes
+*/
 #include <iostream>
 #include <vector>
 #include <stack>
