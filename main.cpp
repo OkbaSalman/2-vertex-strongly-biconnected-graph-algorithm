@@ -240,7 +240,7 @@ void getTheBiggestStronglyConnectedComponent() {
     }
 }
   
-  void prinThetBiggestStronglyConnectedComponent(){
+  void printTheBiggestStronglyConnectedComponent(){
     if(V==big.size()){
         cout<<"All graph is strongly connected"<<endl;
     }else{
@@ -304,7 +304,7 @@ int main() {
 
     g.printAdjacencyMatrix();
     g.getTheBiggestStronglyConnectedComponent();
-    g.prinThetBiggestStronglyConnectedComponent();
+    g.printTheBiggestStronglyConnectedComponent();
     g.MakeTheBiggestStronglyConnectedComponentTheMainGraph();
     g.printAdjacencyMatrix();
     g.saveCurrentGraph();
