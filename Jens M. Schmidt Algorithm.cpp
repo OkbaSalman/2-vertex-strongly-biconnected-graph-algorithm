@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <algorithm>
 
 using namespace std;
 
@@ -65,6 +66,15 @@ public:
         }
     }
 
+    bool allFalse(vector<int> ap){
+        for (int i = 0; i < V; i++) {
+        if (ap[i]) {
+            return false;
+        }
+    }
+    return true;
+    }
+
     void findAPAndBridges() {
         vector<bool> visited(V, false);
         vector<int> parent(V, -1);
@@ -80,20 +90,29 @@ public:
             }
         }
 
-        cout << "Articulation Points: ";
+      if (!allFalse(ap)){
+          cout << "Articulation Points: ";
         for (int i = 0; i < V; i++) {
             if (ap[i]) {
                 cout << i << " ";
             }
         }
         cout << endl;
+      }else{
+        cout << "The Graph is 2-Connected." << endl;
+      }
 
-        cout << "Bridges: ";
+        if(!bridges.empty()){
+            cout << "Bridges: ";
         for (auto bridge : bridges) {
             cout << "(" << bridge.first << ", " << bridge.second << ") ";
         }
         cout << endl;
+        }else{
+            cout << "The Graph is 2-Edge-Connected." << endl;
+        }
     }
+
 };
 
 int main() {
@@ -101,10 +120,11 @@ int main() {
     Graph g(V);
 
     g.addEdge(0, 1);
-    g.addEdge(0, 2);
     g.addEdge(1, 2);
-    g.addEdge(1, 3);
+    g.addEdge(2, 3);
     g.addEdge(3, 4);
+    g.addEdge(4, 0);
+
 
     g.printAdjacencyMatrix();
     g.findAPAndBridges();
