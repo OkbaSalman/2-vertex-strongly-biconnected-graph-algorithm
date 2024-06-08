@@ -9,7 +9,7 @@
 -Sonar Masri: Get the biggest strongly connected component
 -Rania Kojally: The implementation of the CMG using the gabow dfs function
 -Safa Hekmat: Implementing the inOStack function 
--Danya Bakry: Providing examples for testing purposes
+-Danya Bakry + Ali Jbaily: Providing examples for testing purposes
 */
 #include <iostream>
 #include <vector>
