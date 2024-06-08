@@ -38,6 +38,7 @@ Develop a procedure to test whether a directed graph is 2-vertex strongly biconn
 - 6567 : سنار هشام مصري
 - 6267 : صفاء محمد حكمت
 - 5843 : دانية مصطفى بكري
+- 6162 : علي شادي جبيلي
 
 ## License
 
